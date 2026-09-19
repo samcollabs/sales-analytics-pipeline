@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_sales
+    columns:
+      - name: invoice_number
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: unit_price
+        tests:
+          - not_null

@@ -2,3 +2,7 @@
 venv/
 __pycache__/
 data/raw/
+sales_analytics/target/
+sales_analytics/logs/
+logs/
+dbt.log
