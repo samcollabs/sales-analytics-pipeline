@@ -19,6 +19,7 @@ engine = create_engine(connection_url)
 
 with engine.begin() as conn:
     conn.exec_driver_sql("CREATE SCHEMA IF NOT EXISTS raw;")
+    conn.exec_driver_sql("DROP TABLE IF EXISTS raw.raw_sales CASCADE;")
 
 combined.to_sql("raw_sales", engine, schema="raw", if_exists="replace", index=False)
 

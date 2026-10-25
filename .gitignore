@@ -6,3 +6,5 @@ sales_analytics/target/
 sales_analytics/logs/
 logs/
 dbt.log
+.user.yml
+airflow/config/airflow.cfg
